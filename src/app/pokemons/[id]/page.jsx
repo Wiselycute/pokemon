@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: `${pokedata.name} - Pokémon Explorer`,
         description: `Explore detailed information about ${pokedata.name} in our modern Pokédex.`,
-        url: https://yourdomain.com/pokemon/${id},
+        url: `${pokedata.image}`,
         siteName: "Pokémon Explorer",
         images: [
           {

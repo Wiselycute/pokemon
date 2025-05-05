@@ -22,7 +22,7 @@ export default function CardComponent({id, image, name, type, hp, attack}) {
                 {/* content area */}
                 <div className="mt-4 p-4">
                <h1 className="text-2xl font-bold ">{name}</h1>
-               {isSelected? <FaHeart onClick = {() => toggleHeartIcon(id)} size={25} color="red" className="absolute top-2 right-2 cursor-pointer"/> : <FaHeart onClick = {() => toggleHeartIcon(id)} size={25} color="white" className="absolute top-2 right-2 cursor-pointer"/> }
+               {isSelected? <FaHeart onClick = {() => toggleHeartIcon(id)} size={25} color="red" className="absolute top-2 left-2 cursor-pointer"/> : <FaHeart onClick = {() => toggleHeartIcon(id)} size={25} color="white" className="absolute top-2 left-2 cursor-pointer"/> }
                     
                     <div className="bg-orange-500 opacity-[0.5] text-white py-3 px-5 rounded-2xl flex items-center justify center absolute top-2 left-2">
                       <h3 className="font-bold ">{type}</h3>
